@@ -1,0 +1,58 @@
+.work {
+	padding-top: 5rem;
+	.workTag {
+		text-align: center;
+		font-style: italic;
+	}
+	.workHero {
+		height: 60vh;
+		margin-top: 3rem;
+		background-position: center;
+		background-size: cover;	
+	}
+	.flexContainer {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+		margin: 2rem auto;
+		@media(max-width: 480px){
+			flex-direction: column;;
+		}
+		.workDescription {
+			width: 70%;
+			@media(max-width: 480px){
+				width: 100%;
+			}
+			img {
+				width: 100%;
+			}
+			h4 {
+				font-size: 1.4rem;
+			}
+		}
+		aside {
+			width: 20%;
+			@media(max-width: 480px){
+				width: 100%;
+				text-align: center;
+			}
+			h4 {
+				font-size: 1.4rem;
+				padding-bottom: 1.5rem;
+			}
+			h5 {
+				padding-bottom: 1rem;
+			}
+			button {
+				border-style: none;
+				width: 100%;
+				font-family: $heading;
+				text-transform: uppercase;
+				background-color: $teal;
+				padding: 1rem 0;
+				color: #fff;
+				margin-top: 2rem;
+			}
+		}
+	}
+}

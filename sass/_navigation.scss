@@ -1,14 +1,72 @@
 ul.menu {
 	margin: 0;
 	padding: 0;
+	@media(max-width: 480px) {
+		display: flex;
+	}
 	li {
 		display: inline;
 		margin-right: 10px;
 		a {
 			color: #333;
+			text-transform: uppercase;
 			padding: 10px;
-			background: #333;
-			color: white;
+			font-family: $heading;
+			font-size: 1.4rem;
+			@media(max-width: 435px) {
+				font-size: 1.2rem;
+			@media(max-width: 320px) {
+				display: block;
+				padding: 0;
+			}
+			}
 		}
 	}
 }
+
+header {
+	background-size: cover;
+	background-position: center;
+	}
+	.headerTitle {	
+		display: flex;
+		height: 90vh;
+		h2 {
+			text-transform: uppercase;
+			color:#fff;
+			text-align: center;
+			font-size: 4rem;
+			margin: auto;
+			p {
+				@media(max-width: 320px) {
+					font-size: 3rem;
+				}
+			}
+		}
+	}
+
+	.headerInfo {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-top: 3rem;
+		width: 80%;
+		margin: 0 auto;
+		@media (max-width: 560px){
+			flex-direction: column;
+		}
+		h1 {
+			text-transform: uppercase;
+			letter-spacing: .2rem;
+			@media(max-width: 560px) {
+				padding: 2rem;
+				font-size: 3rem;
+			}
+		}
+	}
+
+	nav {
+		@media(max-width: 320px){
+			width: 100%;
+		}
+	}

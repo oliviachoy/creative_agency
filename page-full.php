@@ -1,4 +1,4 @@
-<?php
+`<?php
 
 /*
 	Template Name: Full Page, No Sidebar

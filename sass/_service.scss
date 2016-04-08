@@ -1,0 +1,51 @@
+.service {
+	padding: 5rem 0;
+	.serviceTitle {
+		text-align: center;
+	}
+	.serviceInfo {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		.services {
+			width: 50%;
+			display: flex;
+			padding: 1rem 0;
+			@media(max-width: 768px) {
+				flex: 1 0 100%;
+			}
+			.serviceBox {
+				padding-left: 2rem;
+				@media (max-width: 768px) {
+					width: 90%;
+				}
+				h4 {
+					font-size: 1.4rem;
+					width: 50%;
+					letter-spacing: .1rem;
+					margin: 0;
+					position: relative;
+					&:after {
+						display: block;
+						content: "";
+						position: absolute;
+						width: 13%;
+						height: 2px;
+						background-color: #000;
+						left: 0%;
+						top: 108%;
+					}
+				}
+				p {
+					padding-top: 1rem;
+				}
+				a {
+					text-decoration: none;
+					text-transform: uppercase;
+					font-family: $heading;
+					color: #000;
+				}
+			}
+		}
+	}
+}

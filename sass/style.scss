@@ -7,9 +7,22 @@
 * Author URI: http://hackeryou.com
 */
 
+$yellow: #ffd96d;
+$teal: #92fcf9;
+$heading: 'Montserrat', sans-serif;
+$body: 'Droid Serif', serif;
+
 @import 'normalize';
 @import 'typography';
 @import 'navigation';
+@import 'about';
+@import 'skills';
+@import 'service';
+@import 'facts';
+@import 'contact';
+@import 'work';
+@import 'blog';
+@import 'singleblog';
 @import 'sidebar';
 @import 'comments';
 @import 'footer';
@@ -19,12 +32,18 @@ Default Styling
 ====================================
 */
 
+
+
 img {
 	max-width: 100%;
 }
 
+html {
+	font-size: 62.5%;
+}
 body {
 	color: #333;
+	font-family: $body;
 }
 
 .container {
@@ -33,16 +52,24 @@ body {
 }
 
 .content {
-	float: left;
-	width: 65%;
-	margin-right: 5%;
+	width: 80%;
+	margin: 0 auto;
 }
 
 .full {
 	width: 100%;
 }
 
+h1, h2, h3, h4, h5 {
+	font-family: $heading;
+	text-transform: uppercase;
+	margin: 0;
+}
 
+h2 {
+	font-size: 2.2rem;
+	text-align: center;
+}
 
 
 

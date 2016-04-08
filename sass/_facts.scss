@@ -1,0 +1,45 @@
+.facts {
+	background-size: cover;
+	background-position: center;
+	.factSection {
+		width: 50%;
+		padding: 8rem 0;
+		h2 {
+			text-align: left;
+			margin: 0;
+		}
+		p.factTag {
+			font-style: italic;
+			&:after {
+				display: block;
+				content: "";
+				width: 10%;
+				height: .5px;
+				background-color: #000;
+			}
+		}
+		.factsBox {
+			display: flex;
+			flex-wrap: wrap;
+			.factsInfo{
+				margin-right: 1rem;
+				padding: 1rem 0;
+				@media(max-width: 768px) {
+					flex: 1 0 100%;
+				}
+				p.factNumbers {
+					font-size: 1.6rem;
+					font-family: $heading;
+					margin: 0;
+					font-weight: bold;
+				}
+				p.factDescription {
+					font-size: 1.2rem;
+					font-family: $heading;
+					text-transform: uppercase;
+					margin: 0;
+				}
+			}
+		}
+	}
+}

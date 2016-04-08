@@ -1,8 +1,16 @@
 <footer>
   <div class="container">
-    <p>&copy; HackerYou <?php echo date('Y'); ?></p>
+  	<div class="content">
+  		<h4><?php bloginfo( 'name' ); ?></h4>
+  		<p><?php wp_nav_menu( array(
+        'theme_location' => 'footer'
+      )); ?></p>
+    	<p class="copyright">&copy; <?php echo date('Y'); ?> Elrumi. Designed by Pottere </p>
+  	</div>
   </div>
 </footer>
+
+
 
 <script>
 // scripts.js, plugins.js and jquery are enqueued in functions.php

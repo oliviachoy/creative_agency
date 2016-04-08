@@ -1,8 +1,11 @@
+<div class="headerBlog">  
 <?php get_header(); ?>
+</div>
 
 <div class="main">
   <div class="container">
     <div class="content">
+      <div class="singlePage">
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
         <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -13,6 +16,7 @@
           </div><!-- .entry-meta -->
 
           <div class="entry-content">
+            <img src="<?php the_post_thumbnail_url('full')?>" alt="">
             <?php the_content(); ?>
             <?php wp_link_pages(array(
               'before' => '<div class="page-link"> Pages: ',
@@ -24,20 +28,21 @@
             <?php hackeryou_posted_in(); ?>
             <?php edit_post_link( 'Edit', '<span class="edit-link">', '</span>' ); ?>
           </div><!-- .entry-utility -->
-        </div><!-- #post-## -->
-
         <div id="nav-below" class="navigation">
           <p class="nav-previous"><?php previous_post_link('%link', '&larr; %title'); ?></p>
           <p class="nav-next"><?php next_post_link('%link', '%title &rarr;'); ?></p>
         </div><!-- #nav-below -->
-
         <?php comments_template( '', true ); ?>
+        </div><!-- #post-## -->
+
+
 
       <?php endwhile; // end of the loop. ?>
 
+  <!--   <?php get_sidebar(); ?> -->
+    </div>
     </div> <!-- /.content -->
 
-    <?php get_sidebar(); ?>
 
   </div> <!-- /.container -->
 </div> <!-- /.main -->

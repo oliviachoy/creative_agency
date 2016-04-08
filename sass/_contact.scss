@@ -1,0 +1,79 @@
+.contact .container {
+	padding: 4rem 0;
+	position: relative;
+	.content{
+		h2 {
+			margin: 0;
+		}
+		p.contactTag {
+			text-align: center;
+		}
+		.contactInfo {
+			text-align: center;
+			.phoneNumber {
+				color: $teal;
+				font-size: 4rem;
+				font-family: $heading;
+				letter-spacing: .2rem;
+				margin:0;
+				@media(max-width: 450px) {
+					font-size: 3rem;
+					padding: 1rem;
+				}
+				@media(max-width: 320px) {
+					font-size: 2.4rem;
+				}
+			}
+			.address, .email {
+				text-transform: uppercase;
+				letter-spacing: .2rem;
+				font-size: 1.1rem;
+				margin: 0;
+				@media (max-width: 450px) {
+					font-size: 1rem;
+				}
+			}
+		}
+		.formContainer {
+			margin: 0 auto;
+			@media (max-width: 768px) {
+				width: 50%;
+			}
+			input, textarea {
+				border-style: none;
+				border-bottom: 1px solid grey;
+			}
+			p {
+				float:left;
+				padding-right: 1rem;
+				width: 33.33%;
+				@media (max-width: 768px){
+					display: block;
+					width: 100%;
+				}
+				span input, span textarea {
+					@media(max-width: 600px){
+						width: 100%;
+					}
+				}
+			}
+			p input[type=submit] {
+				background-color: darkgrey;
+				border-style: none;
+				text-transform: uppercase;
+				color: #fff;
+				font-family: $heading;
+				padding: 1rem 3rem;
+				clear: both;
+				position: absolute;
+				bottom:11%;
+				left: 44%;
+				@media(max-width: 768px) {
+					display: block;
+					position: static;
+					margin: 0 auto;
+				}
+			}
+		}
+	}
+}

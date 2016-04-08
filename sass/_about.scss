@@ -1,0 +1,39 @@
+.about {
+	margin: 6rem 0;
+	.content2 {
+		.yellowBoxImage {
+			width: 50%;
+			margin: 0 auto;
+			position: relative;
+			@media(max-width: 800px){
+				width: 100%;
+			}
+			.yellowBox {
+				height: 38%;
+				width: 60%;
+				background-color:$yellow;
+				margin: 3rem auto;
+				@media (max-width: 800px) {
+				width: 100%;
+				height: inherit;
+				}
+			}
+			img {
+				position: absolute;
+				top: 10%;
+				left: 10%;
+				@media(max-width: 800px){
+					position: static;
+					display: block;
+					margin: 0 auto;
+					padding: 4rem 0;
+				}
+			}	
+			
+			}
+		p {
+			text-align: center;
+			font-size: 1.4rem;
+		}
+	}
+}
